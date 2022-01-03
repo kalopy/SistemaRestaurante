@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{08F5141F-E64F-4E29-917D-88654AB8700F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SistemaRestaurante</RootNamespace>
+    <AssemblyName>SistemaRestaurante</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SistemaRestaurante.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SistemaRestaurante.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="script\css\AdminLTE.css" />
+    <Content Include="script\css\AdminLTE.min.css" />
+    <Content Include="script\css\blue.css" />
+    <Content Include="script\css\bootstrap.min.css" />
+    <Content Include="script\css\font-awesome.css" />
+    <Content Include="script\css\_all-skins.css" />
+    <Content Include="script\css\_all-skins.min.css" />
+    <Content Include="script\dist\css\AdminLTE.css" />
+    <Content Include="script\dist\css\AdminLTE.min.css" />
+    <Content Include="script\dist\css\font-awesome.css" />
+    <Content Include="script\dist\css\skins\skin-black-light.css" />
+    <Content Include="script\dist\css\skins\skin-black-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-black.css" />
+    <Content Include="script\dist\css\skins\skin-black.min.css" />
+    <Content Include="script\dist\css\skins\skin-blue-light.css" />
+    <Content Include="script\dist\css\skins\skin-blue-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-blue.css" />
+    <Content Include="script\dist\css\skins\skin-blue.min.css" />
+    <Content Include="script\dist\css\skins\skin-green-light.css" />
+    <Content Include="script\dist\css\skins\skin-green-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-green.css" />
+    <Content Include="script\dist\css\skins\skin-green.min.css" />
+    <Content Include="script\dist\css\skins\skin-purple-light.css" />
+    <Content Include="script\dist\css\skins\skin-purple-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-purple.css" />
+    <Content Include="script\dist\css\skins\skin-purple.min.css" />
+    <Content Include="script\dist\css\skins\skin-red-light.css" />
+    <Content Include="script\dist\css\skins\skin-red-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-red.css" />
+    <Content Include="script\dist\css\skins\skin-red.min.css" />
+    <Content Include="script\dist\css\skins\skin-yellow-light.css" />
+    <Content Include="script\dist\css\skins\skin-yellow-light.min.css" />
+    <Content Include="script\dist\css\skins\skin-yellow.css" />
+    <Content Include="script\dist\css\skins\skin-yellow.min.css" />
+    <Content Include="script\dist\css\skins\_all-skins.css" />
+    <Content Include="script\dist\css\skins\_all-skins.min.css" />
+    <Content Include="script\dist\css\_all-skins.css" />
+    <Content Include="script\dist\img\user2-160x160.jpg" />
+    <Content Include="script\dist\js\app.js" />
+    <Content Include="script\dist\js\app.min.js" />
+    <Content Include="script\dist\js\demo.js" />
+    <Content Include="script\dist\js\pages\dashboard.js" />
+    <Content Include="script\dist\js\pages\dashboard2.js" />
+    <Content Include="script\img\apple-touch-icon.png" />
+    <Content Include="script\img\favicon.ico" />
+    <Content Include="script\img\muser2-160x160.jpg" />
+    <Content Include="script\img\user2-160x160.jpg" />
+    <Content Include="script\jquery-3.5.1.min.js" />
+    <Content Include="script\js\app.js" />
+    <Content Include="script\js\app.min.js" />
+    <Content Include="script\js\bootstrap.min.js" />
+    <Content Include="script\js\icheck.js" />
+    <Content Include="script\js\icheck.min.js" />
+    <Content Include="script\js\jQuery-2.1.4.min.js" />
+    <Content Include="script\plugins\chartjs\Chart.js" />
+    <Content Include="script\plugins\chartjs\Chart.min.js" />
+    <Content Include="script\plugins\fastclick\fastclick.js" />
+    <Content Include="script\plugins\fastclick\fastclick.min.js" />
+    <Content Include="script\plugins\iCheck\all.css" />
+    <Content Include="script\plugins\iCheck\flat\aero%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\aero.css" />
+    <Content Include="script\plugins\iCheck\flat\aero.png" />
+    <Content Include="script\plugins\iCheck\flat\blue%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\blue.css" />
+    <Content Include="script\plugins\iCheck\flat\blue.png" />
+    <Content Include="script\plugins\iCheck\flat\flat%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\flat.css" />
+    <Content Include="script\plugins\iCheck\flat\flat.png" />
+    <Content Include="script\plugins\iCheck\flat\green%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\green.css" />
+    <Content Include="script\plugins\iCheck\flat\green.png" />
+    <Content Include="script\plugins\iCheck\flat\grey%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\grey.css" />
+    <Content Include="script\plugins\iCheck\flat\grey.png" />
+    <Content Include="script\plugins\iCheck\flat\orange%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\orange.css" />
+    <Content Include="script\plugins\iCheck\flat\orange.png" />
+    <Content Include="script\plugins\iCheck\flat\pink%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\pink.css" />
+    <Content Include="script\plugins\iCheck\flat\pink.png" />
+    <Content Include="script\plugins\iCheck\flat\purple%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\purple.css" />
+    <Content Include="script\plugins\iCheck\flat\purple.png" />
+    <Content Include="script\plugins\iCheck\flat\red%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\red.css" />
+    <Content Include="script\plugins\iCheck\flat\red.png" />
+    <Content Include="script\plugins\iCheck\flat\yellow%402x.png" />
+    <Content Include="script\plugins\iCheck\flat\yellow.css" />
+    <Content Include="script\plugins\iCheck\flat\yellow.png" />
+    <Content Include="script\plugins\iCheck\flat\_all.css" />
+    <Content Include="script\plugins\iCheck\futurico\futurico%402x.png" />
+    <Content Include="script\plugins\iCheck\futurico\futurico.css" />
+    <Content Include="script\plugins\iCheck\futurico\futurico.png" />
+    <Content Include="script\plugins\iCheck\icheck.js" />
+    <Content Include="script\plugins\iCheck\icheck.min.js" />
+    <Content Include="script\plugins\iCheck\line\aero.css" />
+    <Content Include="script\plugins\iCheck\line\blue.css" />
+    <Content Include="script\plugins\iCheck\line\green.css" />
+    <Content Include="script\plugins\iCheck\line\grey.css" />
+    <Content Include="script\plugins\iCheck\line\line%402x.png" />
+    <Content Include="script\plugins\iCheck\line\line.css" />
+    <Content Include="script\plugins\iCheck\line\line.png" />
+    <Content Include="script\plugins\iCheck\line\orange.css" />
+    <Content Include="script\plugins\iCheck\line\pink.css" />
+    <Content Include="script\plugins\iCheck\line\purple.css" />
+    <Content Include="script\plugins\iCheck\line\red.css" />
+    <Content Include="script\plugins\iCheck\line\yellow.css" />
+    <Content Include="script\plugins\iCheck\line\_all.css" />
+    <Content Include="script\plugins\iCheck\minimal\aero%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\aero.css" />
+    <Content Include="script\plugins\iCheck\minimal\aero.png" />
+    <Content Include="script\plugins\iCheck\minimal\blue%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\blue.css" />
+    <Content Include="script\plugins\iCheck\minimal\blue.png" />
+    <Content Include="script\plugins\iCheck\minimal\green%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\green.css" />
+    <Content Include="script\plugins\iCheck\minimal\green.png" />
+    <Content Include="script\plugins\iCheck\minimal\grey%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\grey.css" />
+    <Content Include="script\plugins\iCheck\minimal\grey.png" />
+    <Content Include="script\plugins\iCheck\minimal\minimal%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\minimal.css" />
+    <Content Include="script\plugins\iCheck\minimal\minimal.png" />
+    <Content Include="script\plugins\iCheck\minimal\orange%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\orange.css" />
+    <Content Include="script\plugins\iCheck\minimal\orange.png" />
+    <Content Include="script\plugins\iCheck\minimal\pink%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\pink.css" />
+    <Content Include="script\plugins\iCheck\minimal\pink.png" />
+    <Content Include="script\plugins\iCheck\minimal\purple%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\purple.css" />
+    <Content Include="script\plugins\iCheck\minimal\purple.png" />
+    <Content Include="script\plugins\iCheck\minimal\red%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\red.css" />
+    <Content Include="script\plugins\iCheck\minimal\red.png" />
+    <Content Include="script\plugins\iCheck\minimal\yellow%402x.png" />
+    <Content Include="script\plugins\iCheck\minimal\yellow.css" />
+    <Content Include="script\plugins\iCheck\minimal\yellow.png" />
+    <Content Include="script\plugins\iCheck\minimal\_all.css" />
+    <Content Include="script\plugins\iCheck\polaris\polaris%402x.png" />
+    <Content Include="script\plugins\iCheck\polaris\polaris.css" />
+    <Content Include="script\plugins\iCheck\polaris\polaris.png" />
+    <Content Include="script\plugins\iCheck\square\aero%402x.png" />
+    <Content Include="script\plugins\iCheck\square\aero.css" />
+    <Content Include="script\plugins\iCheck\square\aero.png" />
+    <Content Include="script\plugins\iCheck\square\blue%402x.png" />
+    <Content Include="script\plugins\iCheck\square\blue.css" />
+    <Content Include="script\plugins\iCheck\square\blue.png" />
+    <Content Include="script\plugins\iCheck\square\green%402x.png" />
+    <Content Include="script\plugins\iCheck\square\green.css" />
+    <Content Include="script\plugins\iCheck\square\green.png" />
+    <Content Include="script\plugins\iCheck\square\grey%402x.png" />
+    <Content Include="script\plugins\iCheck\square\grey.css" />
+    <Content Include="script\plugins\iCheck\square\grey.png" />
+    <Content Include="script\plugins\iCheck\square\orange%402x.png" />
+    <Content Include="script\plugins\iCheck\square\orange.css" />
+    <Content Include="script\plugins\iCheck\square\orange.png" />
+    <Content Include="script\plugins\iCheck\square\pink%402x.png" />
+    <Content Include="script\plugins\iCheck\square\pink.css" />
+    <Content Include="script\plugins\iCheck\square\pink.png" />
+    <Content Include="script\plugins\iCheck\square\purple%402x.png" />
+    <Content Include="script\plugins\iCheck\square\purple.css" />
+    <Content Include="script\plugins\iCheck\square\purple.png" />
+    <Content Include="script\plugins\iCheck\square\red%402x.png" />
+    <Content Include="script\plugins\iCheck\square\red.css" />
+    <Content Include="script\plugins\iCheck\square\red.png" />
+    <Content Include="script\plugins\iCheck\square\square%402x.png" />
+    <Content Include="script\plugins\iCheck\square\square.css" />
+    <Content Include="script\plugins\iCheck\square\square.png" />
+    <Content Include="script\plugins\iCheck\square\yellow%402x.png" />
+    <Content Include="script\plugins\iCheck\square\yellow.css" />
+    <Content Include="script\plugins\iCheck\square\yellow.png" />
+    <Content Include="script\plugins\iCheck\square\_all.css" />
+    <Content Include="script\plugins\jQuery\jQuery-2.1.4.min.js" />
+    <Content Include="script\plugins\jvectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="script\plugins\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="script\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="script\plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="script\plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="script\plugins\sparkline\jquery.sparkline.js" />
+    <Content Include="script\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\CategoriaController.vb" />
+    <Compile Include="Controllers\ConsultaController.vb" />
+    <Compile Include="Controllers\ConsultaVentaController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Controllers\ProductoController.vb" />
+    <Compile Include="Controllers\TransaccionController.vb" />
+    <Compile Include="Controllers\VentaConsultaController.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Categoria\Create.vbhtml" />
+    <Content Include="Views\Categoria\Edit.vbhtml" />
+    <Content Include="Views\Categoria\Index.vbhtml" />
+    <Content Include="script\dist\fonts\fontawesome-webfont.eot" />
+    <Content Include="script\dist\fonts\fontawesome-webfont.ttf" />
+    <Content Include="script\dist\fonts\fontawesome-webfont.woff" />
+    <Content Include="script\dist\fonts\fontawesome-webfont.woff2" />
+    <Content Include="script\dist\fonts\FontAwesome.otf" />
+    <Content Include="script\fonts\fontawesome-webfont.eot" />
+    <Content Include="script\fonts\fontawesome-webfont.ttf" />
+    <Content Include="script\fonts\fontawesome-webfont.woff" />
+    <Content Include="script\fonts\fontawesome-webfont.woff2" />
+    <Content Include="script\fonts\FontAwesome.otf" />
+    <Content Include="Views\Plantillas\Plantilla.vbhtml" />
+    <Content Include="Views\Producto\Index.vbhtml" />
+    <Content Include="Views\Producto\Create.vbhtml" />
+    <Content Include="Views\Producto\Edit.vbhtml" />
+    <Content Include="Views\Transaccion\Compra.vbhtml" />
+    <Content Include="Views\Transaccion\NuevaCompra.vbhtml" />
+    <Content Include="Views\Transaccion\NuevaVenta.vbhtml" />
+    <Content Include="Views\Transaccion\Venta.vbhtml" />
+    <Content Include="Views\Consulta\ProductosPorCategoria.vbhtml" />
+    <Content Include="Views\VentaConsulta\VentasPorRangoFecha.vbhtml" />
+    <Content Include="Views\ConsultaVenta\VentaxFecha.vbhtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClaseRestaurante\ClaseRestaurante.vbproj">
+      <Project>{d1630fb2-cb57-4103-b4db-117ee5a350c2}</Project>
+      <Name>ClaseRestaurante</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64071</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64071/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
